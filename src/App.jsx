@@ -1,7 +1,9 @@
 import {useState} from 'react'
-import Listagem from './pages/Listagem'
-import { Routes,Route } from 'react-router-dom'
 import './App.css'
+import { Routes,Route } from 'react-router-dom'
+import Listagem from './pages/Listagem';
+
+
 
 function App() {
   const App = () => {
@@ -16,5 +18,5 @@ function App() {
   }
 }
 
-export default App
+export default App;
 
