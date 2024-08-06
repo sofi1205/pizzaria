@@ -5,18 +5,18 @@ import Listagem from './pages/Listagem';
 
 
 
-function App() {
-  const App = () => {
+const App = () => {
 
     const [color] = useState("#0000ff")
     document.body.style.backgroundColor = color
+    
     return (
       <Routes>
         <Route path="/" element={<Listagem />} />
       </Routes>
     )
   }
-}
+
 
 export default App;
 
