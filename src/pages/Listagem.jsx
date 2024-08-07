@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'
+import pizzas from "../shared/Pizzas"
 
 const Listagem = () => {
 
-    const ItensLista = () => Pizzas.map(
+    const ItensLista = () => pizzas.map(
         pizza =>
         <li key={pizza.id} style={{listStyle: 'none'}}>
             <img src={pizza.imagem}
@@ -20,9 +21,10 @@ const Listagem = () => {
 
     return (
         <>
+
         <h2 style = {{textAlign: 'center'}}>Pizzas ITB </h2>
-        <ul> <ItensLista /> 
-        </ul>
+        <ul> <ItensLista /> </ul>
+        
         </>
     )
 
